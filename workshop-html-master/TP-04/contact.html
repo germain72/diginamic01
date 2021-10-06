@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <form class="form_contact" action="/send_contact" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" name="name" id="name" placeholder="votre nom" />
+      <label for="firstname">Prénom :</label>
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="votre prénom"
+      />
+      <label for="adress">Adresse :</label>
+      <input
+        type="text"
+        name="adress"
+        id="adress"
+        placeholder="votre adresse"
+      />
+      <label for="mail">E-mail :</label>
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder="votre adresse mail"
+      />
+      <label for="phone">Tel :</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="votre n° de téléphone"
+      />
+      <label for="contact">Vous souhaitez être contacté ?</label>
+      <select name="contact" id="contact">
+        <option value="mail">par E-mail</option>
+        <option value="tel">par Téléphone</option>
+      </select>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>

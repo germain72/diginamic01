@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>navBar</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="p-5 bg-light">
+        <h1 class="display-3">Navbar</h1>
+        <p class="lead">description</p>
+        <p class="lead">
+          <a class="btn btn-secondary btn-lg" href="./index.html" role="button"
+            >Return Accueil</a
+          >
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-sm navbar-dark"
+            style="background-color: #000"
+          >
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-collapse-target"
+              aria-controls="navbar-collapse-target"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            ></button>
+            <div class="collapse navbar-collapse" id="navbar-collapse-target">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown-target"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Dropdown</a
+                  >
+                  <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="d-flex my-2 my-lg-0">
+                <input
+                  class="form-control ms-sm-2"
+                  type="text"
+                  placeholder="Search"
+                />
+                <span class="input-group-text btn-success"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <!-- <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                  >
+                  Search
+                </button> -->
+              </form>
+            </div>
+          </nav>
+          <div class="row">
+            <p>bs5-nav-a</p>
+            <nav class="nav justify-content-center|justify-content-end">
+              <a class="nav-link active" href="#">Active link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link disabled" href="#">Disabled link</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-pills" id="navId" role="tablist">
+              <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab"
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#tab2Id" data-bs-toggle="tab"
+                    >tab2</a
+                  >
+                  <a class="dropdown-item" href="#tab3Id" data-bs-toggle="tab"
+                    >tab3</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#tab4Id" data-bs-toggle="tab"
+                    >tab4</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
+                  >Another link</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="#" class="nav-link disabled" data-bs-toggle="tab"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- Tab panes -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+              tab1
+            </div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel">tab2</div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel">tab3</div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel">tab4</div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel">tab5</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./../node_modules/jquery/dist/jquery.js"></script>
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script/navbar.js"></script>
+  </body>
+</html>

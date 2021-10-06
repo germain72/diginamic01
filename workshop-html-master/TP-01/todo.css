@@ -1,0 +1,26 @@
+body {
+  background-color: #000099;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.title,
+.item,
+input {
+  padding: 10px;
+}
+.title {
+  color: #fff;
+}
+.item {
+  list-style: none;
+  background-color: #fff;
+  margin: 10px 10%;
+  border-radius: 5px;
+}
+input:first-child {
+  border-radius: 3px;
+}
+input:last-child {
+  border-radius: 8px;
+}

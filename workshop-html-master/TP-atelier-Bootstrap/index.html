@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- /* LANCER LA PAGE DEPUIS SPA.HTML*/ -->
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-tofit=
+no"
+    />
+    <!-- Icon - font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./../bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>SGP - Accueil</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="./index.html" class="navbar-brand"> SGP </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTarget"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- LIST NAVBAR MENU -->
+        <div class="collapse navbar-collapse" id="navbarTarget">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./creer.html">Collaborateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stats.html">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./activites.html"> Activités </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- SECTION CHOIX USER -->
+      <section class="mb-5">
+        <div class="container-fluid">
+          <!-- ADD USER - BUTTON LEFT-->
+          <div class="row d-flex justify-content-end">
+            <div class="mr-3 mt-3">
+              <a class="nav-link" href="./creer.html">
+                <button id="create_newUser" class="btn btn-success">
+                  Ajouter un nouveau collaborateur
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="row mx-4">
+            <h1 class="jumbotron col mt-4 display-4">Les collaborateurs</h1>
+          </div>
+          <!-- INPUT -->
+          <div class="row mx-4">
+            <div class="form-group d-flex col-8 justify-content-center">
+              <label for="input_search"
+                >Rechercher un nom ou un prénom qui commence par :</label
+              >
+              <input
+                type="text"
+                name="search"
+                id="input_search"
+                class="form-control col-3 mx-4"
+              />
+              <button type="button" class="btn btn-info">
+                <i class="fa fa-search mr-3"></i>Rechercher
+              </button>
+            </div>
+            <div class="col-4">
+              <div class="input-group-prepend">
+                <input
+                  class="mr-3"
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                />
+                Voir les collaborateurs désactivés
+              </div>
+            </div>
+          </div>
+          <!-- SELECT -->
+          <div class="row ml-4">
+            <div class="form-group d-flex col-8 justify-content-center">
+              <label for="select_dep" class="">Filter par département :</label>
+              <div class="mx-4">
+                <select id="select_dep" class="custom-select">
+                  <option selected>Tous</option>
+                  <option value="1">Comptabilité</option>
+                  <option value="2">Ressources Humaines</option>
+                  <option value="3">Informatique</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CARD USERS -->
+      <div>
+        <div class="container-fluid">
+          <aside id="users-cards" class="d-flex row align-items-center">
+            <!-- USER -->
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- SCRIPT -->
+    <script src="./script/jquery/jquery.min.js"></script>
+    <script src="./script/popper/popper.min.js"></script>
+    <script src="./../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+  <script src="./script/user-factory.js"></script>
+  <script src="./script/user-data-base.js"></script>
+  <script src="./script/create-card-html.js"></script>
+  <script src="./script/spa.js"></script>
+</html>

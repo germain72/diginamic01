@@ -1,0 +1,89 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: cornflowerblue;
+}
+
+h1#parcours {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 10rem auto 4rem auto;
+}
+h3{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#nav {
+  padding: 20px;
+  border: 0.5px solid cadetblue;
+}
+#nav .nav_list {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#nav .nav_list li{
+    margin: 10px;
+}
+#nav .nav_list li a,
+#nav .nav_list li a:active,
+#nav .nav_list li a:hover,
+#nav .nav_list li a:visited {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0;
+  color:#fff;
+  font-weight: 700;
+  margin: 10px auto 0px auto;
+  border: 1px solid cadetblue;
+  background-color: #558abb;
+}
+#nav .nav_list li a:hover {
+  background: cornflowerblue;
+  margin: 0 auto 5px auto;
+
+}
+#nav .nav_list li a:hover::after{
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  top:5rem;
+  left:0;
+  border-bottom:2px solid #bb5590;
+}
+
+.exp_description {
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+.exp_description:first-child {
+  margin-top: 15rem;
+}
+
+.sp_func {
+  text-transform: capitalize;
+}
+.sp_up {
+  text-transform: uppercase;
+}
+
+.sp_date {
+  font-style: italic;
+  font-weight: 600;
+}
+.transition {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-style: oblique;
+  color: cadetblue;
+  margin: 5rem 20%;
+  border-top: 1px dashed rgb(77, 129, 240);
+  border-bottom: 1px dashed rgb(77, 129, 240);
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-tofit=
+no"
+    />
+    <!-- Icon - font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./../bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/editer.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>SGP - Editer</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="./index.html" class="navbar-brand"> SGP </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTarget"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- LIST NAVBAR MENU -->
+        <div class="collapse navbar-collapse" id="navbarTarget">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./creer.html">Collaborateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stats.html">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./activites.html"> Activités </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row m-5">
+          <div
+            class="col-4 d-flex justify-content-center"
+            style="position: relative"
+          >
+            <img
+              id="photo-user"
+              class="align-self-center"
+              style="width: 400px; height: 400px"
+              src=""
+              alt="Card image cap"
+            />
+          </div>
+          <div class="offset-1 col-5">
+            <div class="mb-4 d-flex align-items-end">
+              <h1>NOM</h1>
+              <h1 class="mx-4">Prénom</h1>
+              <span class="display-4"> - </span>
+              <h3 class="mx-4">Matricule</h3>
+              <div class="pb-2 input-group-prepend offset-1">
+                <input
+                  id="locking"
+                  class="mr-3 d-flex align-self-center"
+                  type="checkbox"
+                  checked
+                  aria-label="Checkbox text input"
+                />
+                <p class="my-auto">Désactiver</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <!-- IDENTITY -->
+              <div class="card" style="width: 100%">
+                <div class="card-header alert-info">
+                  <h5 class="mb-0">
+                    <button
+                      type="button"
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#identity"
+                      aria-expanded="true"
+                    >
+                      Identité
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="identity"
+                  class="collapse show"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="container">
+                      <!-- ROW CIVILITE -->
+                      <div class="row">
+                        <div class="form-group d-flex col pb-32">
+                          <label
+                            for="select_genre"
+                            class="col-6 d-flex justify-content-end"
+                            ><span class="mr-5 h h5">Civilité :</span></label
+                          >
+                          <div class="mx-4 col-6">
+                            <select
+                              id="select_genre"
+                              class="custom-select form-control"
+                            >
+                              <option value="1">Femme</option>
+                              <option value="2">Homme</option>
+                              <option value="3">-</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ROW NAME -->
+                    <div class="row">
+                      <div class="form-group d-flex col pb-32">
+                        <label
+                          for="name"
+                          class="col-6 d-flex justify-content-end"
+                        >
+                          <span class="mr-5 h5">Nom :</span>
+                        </label>
+                        <input
+                          id="name"
+                          type="text"
+                          class="form-control col-6"
+                        />
+                      </div>
+                    </div>
+                    <!-- ROW LASTNAME -->
+                    <div class="row">
+                      <div class="form-group d-flex col pb-32">
+                        <label
+                          for="firstname"
+                          class="col-6 d-flex justify-content-end"
+                          ><span class="mr-5 h5">Prénom :</span></label
+                        >
+                        <input
+                          id="firstname"
+                          type="text"
+                          class="form-control col-6"
+                        />
+                      </div>
+                    </div>
+                    <!-- ROW DATE DE NAISSANCE -->
+                    <div class="row">
+                      <div class="form-group d-flex col pb-32">
+                        <label
+                          for="birthday"
+                          class="col-6 d-flex justify-content-end"
+                          ><span class="mr-5 h5">
+                            Date de naissance :
+                          </span></label
+                        >
+                        <input type="text" id="birthday" class="form-control" />
+                      </div>
+                    </div>
+                    <!-- ROW ADDRESS -->
+                    <div class="row">
+                      <div class="form-group col d-flex pb-32">
+                        <label
+                          for="address"
+                          class="col-6 d-flex justify-content-end"
+                          ><span class="mr-5 h5">Adresse :</span></label
+                        >
+                        <textarea
+                          name="adresse"
+                          id="address"
+                          class="col-6 form-control"
+                          cols="30"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!-- ROW SOCIAL SECURITY -->
+                    <div class="row">
+                      <div class="form-group col d-flex pb-32">
+                        <label
+                          for="social_secu"
+                          class="col-6 d-flex justify-content-end"
+                          ><span class="mr-5 h5">
+                            Numéro de Sécurité Sociale :
+                          </span></label
+                        >
+                        <input
+                          type="tel"
+                          name="social_security"
+                          id="social_secu"
+                          class="col-6 form-control"
+                        />
+                      </div>
+                    </div>
+                    <!-- ROW TELEPHONE -->
+                    <div class="row">
+                      <div class="form-group col d-flex pb-32">
+                        <label
+                          for="telephone"
+                          class="col-6 d-flex justify-content-end"
+                          ><span class="mr-5 h5">Téléphone :</span></label
+                        >
+                        <input
+                          type="tel"
+                          name="tel"
+                          id="telephone"
+                          class="col-6 form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- POSTE -->
+              <div class="card" style="width: 100%">
+                <div class="card-header alert-info">
+                  <h5 class="mb-0">
+                    <button
+                      type="button"
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#poste"
+                      aria-expanded="true"
+                    >
+                      Poste
+                    </button>
+                  </h5>
+                </div>
+                <div id="poste" class="collapse" data-parent="#accordion">
+                  <div class="container">
+                    <div class="row">
+                      <div class="card-body">
+                        <!-- ROW DEPT -->
+                        <div class="row">
+                          <div class="form-group col d-flex pb-32">
+                            <label
+                              for="post_dep"
+                              class="col-4 d-flex justify-content-end"
+                              ><span class="mr-5 h5">
+                                Département :
+                              </span></label
+                            >
+                            <input
+                              type="tel"
+                              name="dep"
+                              id="post_dep"
+                              class="col-6 form-control"
+                            />
+                          </div>
+                        </div>
+                        <!-- ROW DEPT NOM -->
+                        <div class="row">
+                          <div class="form-group col d-flex pb-32">
+                            <label
+                              for="post_fonction"
+                              class="col-4 d-flex justify-content-end"
+                              ><span class="mr-5 h5">Nom :</span></label
+                            >
+                            <input
+                              type="tel"
+                              name="fonction"
+                              id="post_fonction"
+                              class="col-6 form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- IBAN -->
+              <div class="card" style="width: 100%">
+                <div class="card-header alert-info">
+                  <h5 class="mb-0">
+                    <button
+                      type="button"
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#iban"
+                      aria-expanded="true"
+                    >
+                      Coordonnées Bancaires
+                    </button>
+                  </h5>
+                </div>
+                <div id="iban" class="collapse" data-parent="#accordion">
+                  <div class="container">
+                    <div class="row">
+                      <div class="card-body">
+                        <div class="card-body">
+                          <!-- ROW IBAN -->
+                          <div class="row">
+                            <div class="form-group col d-flex pb-32">
+                              <label
+                                for="post_iban"
+                                class="col-4 d-flex justify-content-end"
+                                ><span class="mr-5 h5">IBAN :</span></label
+                              >
+                              <input
+                                type="tel"
+                                name="iban"
+                                id="post_iban"
+                                class="col-6 form-control"
+                              />
+                            </div>
+                          </div>
+                          <!-- ROW BIC -->
+                          <div class="row">
+                            <div class="form-group col d-flex pb-32">
+                              <label
+                                for="post_bic"
+                                class="col-4 d-flex justify-content-end"
+                                ><span class="mr-5 h5">BIC :</span></label
+                              >
+                              <input
+                                type="tel"
+                                name="bic"
+                                id="post_bic"
+                                class="col-6 form-control"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./index.html">
+                <button class="btn btn-success mt-5 offset-9 px-5 offset-1">
+                  Sauvegarder
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script></script>
+    <!-- SCRIPT -->
+    <script src="./script/jquery/jquery.min.js"></script>
+    <script src="./script/popper/popper.min.js"></script>
+    <script src="./../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="./script/create-card-html.js"></script>
+    <script src="./script/user-factory.js"></script>
+    <script src="./script/user-data-base.js"></script>
+    <script src="./script/spa.js"></script>
+    <script src="./script/edit-user.js"></script>
+  </body>
+</html>

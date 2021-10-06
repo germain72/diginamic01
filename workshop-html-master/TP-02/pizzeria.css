@@ -1,0 +1,36 @@
+body {
+  background-color: #efecca;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.title {
+  color: #c03000;
+}
+.title-sub {
+  color: #4bb5c1;
+}
+.item {
+  display: inline;
+  list-style: none;
+
+}
+.link {
+  z-index: 1;
+    text-decoration: none;
+}
+.link-list {
+  display: inline-block;
+  width: min-content;
+  color: #fff;
+  border: 2px solid #660000;
+  background-color: #c03000;
+  padding: 10px;
+}
+.link-contact {
+    font-weight: bold;
+    color: #0000ff;
+}
+
+.link-list:hover,
+a.link-list:active {
+  background-color: #009900;
+}

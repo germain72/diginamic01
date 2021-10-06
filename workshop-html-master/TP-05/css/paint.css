@@ -1,0 +1,79 @@
+body {
+  background-color: darkslategray;
+}
+.tab_title {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 10rem;
+  border: 15px double #fff;
+}
+.tab_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 10rem;
+}
+picture.pict_img-1 {
+  position: relative;
+  align-self: flex-end;
+}
+picture.pict_img-2 {
+  position: relative;
+  margin-bottom: 20rem;
+}
+picture.pict_img-3 {
+  position: relative;
+  align-self: center;
+}
+picture.pict_img-4 {
+  position: relative;
+  align-self: flex-end;
+}
+#img-1 {
+  width: 600px;
+  height: 430px;
+  background-image: url("./image/162336.jpg");
+  background-size: cover;
+}
+#img-2 {
+  width: 600px;
+  height: 430px;
+  background-image: url("./image/073809.jpg");
+  background-size: cover;
+}
+#img-3 {
+  width: 600px;
+  height: 430px;
+  background-image: url("./image/2228591.jpg");
+  background-size: cover;
+}
+#img-4 {
+  width: 680px;
+  height: 900px;
+  background-image: url("./image/071002.jpg");
+  background-size: cover;
+}
+legend {
+  position: absolute;
+  top: 100%;
+  left: 300px;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-top: 1rem;
+  transform: translateX(-50%);
+  text-decoration: underline aliceblue 2px;
+  opacity: 0;
+}
+picture.pict_img-1:hover legend {
+  opacity: 1;
+}
+picture.pict_img-2:hover legend {
+  opacity: 1;
+}
+picture.pict_img-3:hover legend {
+  opacity: 1;
+}
+picture.pict_img-4:hover legend {
+  opacity: 1;
+}

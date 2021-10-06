@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./../bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+    <title>Ajout d'utilisateur</title>
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron display-4">Ajouter un utilisateur</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form name="form_userAdd" 
+            method="#"action="#">
+              <div class="form-group d-flex">
+                <label for="inputName" class="col-4">Nom :</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="inputName"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group d-flex mt-5">
+                <label for="inputPassword" class="col-4">Password :</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+
+              <button
+                id="btn_addUser"
+                class="btn btn-success mt-5"
+                style="width: 200px"
+                type="submit"
+              >
+                Ajouter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="jumbotron display-4 mt-3">Liste Utilisateurs</div>
+        <div class="container">
+          <div class="row table-responsive-lg">
+            <table id="table_users"class="table table- ." style="border: 2px solid #000">
+               <caption>List of users</caption>
+              <thead>
+                <tr>
+                  <th scope="col">id</th>
+                  <th scope="col">nom</th>
+                  <th scope="col">mot de passe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td >John</td>
+                  <td >123</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Bob</td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Jack</td>
+                  <td>123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./../TP-06-Bootstrap/script/jquery.min.js"></script>
+    <script src="./../TP-06-Bootstrap/script/popper.min.js"></script>
+    <script src="./../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

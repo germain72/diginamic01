@@ -1,0 +1,7 @@
+# ignore node_modules
+node_modules/
+bootstrap-4.0.0/*
+# ignore project JQuery
+TP 05/
+*/packages/
+TP atelier Bootstrap/script/old/*

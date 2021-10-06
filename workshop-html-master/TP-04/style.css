@@ -1,0 +1,20 @@
+body {
+  background-color: #efecca;
+}
+.form_contact {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  background-color: #4bb5c1;
+  width: 50%;
+}
+.form_contact label {
+  margin-left: 30px;
+  color: #c03000;
+}
+.form_contact input {
+  width: 30%;
+  margin-left: 15px;
+  border: 1px dashed  #660000;
+  margin-bottom: 10px;
+}

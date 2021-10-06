@@ -1,0 +1,12 @@
+table{
+    border: 2px solid #000;
+}
+th{
+    border-left:  2px solid #000;
+}
+tr{
+    height: 48px!important;
+}
+tr:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.2);
+}

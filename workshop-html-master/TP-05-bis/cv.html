@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./..bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/cv.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="jumbotron">
+      <div class="container-fluid">
+        <div class="row justify-content-evenly">
+          <div class="triangle triangle-2"></div>
+          <div class="triangle"></div>
+          <div class="col-8  offset-2 title-box">
+            <h1 class="fw-bolder">
+              <span class="title_letter">Y</span>van
+              <span class="mx-3">.</span>
+              <span class="title_letter">P</span><span class="nom">alliès</span>
+            </h1>
+            <h5 class="my-3 ml-5" style="color: gray">
+              Concepteur / Développeur d'application JAVA Fullstack
+            </h5>
+          </div>
+          <!-- PHOTO -->
+          <figure class="col-2 d-flex justify-content-end">
+            <img
+              src="./images/Pallies-reduce.jpg"
+              alt="photo cv"
+              id="photo-user"
+              class="figure-img img-fluid rounded-circle my-3"
+            />
+          </figure>
+        </div>
+      </div>
+    </header>
+    <!-- DESCRIPTION DU POSTE BGC-JAUNE -->
+    <section class="profile d-flex flex-column">
+      <h3 class="text-uppercase pt-4 mb-2 pl-5">Concepteur Développeur Web</h3>
+      <h5 class="date my-1 ml-5">Aujourd'hui</h5>
+      <h6 class="ml-5 text-uppercase">le groupe la poste - 44</h6>
+      <p class="my-3 pl-5">
+        Au sein du pôle « Développement WEB » , <br />le concepteur développeur
+        web assure la maîtrise d’oeuvre du parc applicatif et la maintenance
+        corrective des applications ou aux nouveaux projets.
+      </p>
+    </section>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ASIDE => PARTIE DE GAUCHE -->
+        <aside class="col-lg-4 col-xl-2">
+          <!-- CONTACTS -->
+          <section class="contact">
+            <div>
+              <h3 class="text-uppercase pl-5">contacts</h3>
+            </div>
+            <div class="d-flex">
+              <svg class="icon icon-phone offset-2 col-4">
+                <use xlink:href="./svg/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <p>+33 7 84 77 36 13</p>
+            </div>
+            <hr class="mx-auto my-2" />
+            <div class="d-flex">
+              <svg class="icon icon-mail3 offset-2 col-4">
+                <use xlink:href="./svg/symbol-defs.svg#icon-mail3"></use>
+              </svg>
+              <p>yvan.pallies@laposte.fr</p>
+            </div>
+            <hr class="mx-auto my-2" />
+            <div class="d-flex">
+              <svg class="icon icon-earth offset-2 col-4">
+                <use xlink:href="./svg/symbol-defs.svg#icon-earth"></use>
+              </svg>
+              <a href="https://github.com/Pallies" class="text-deco-none"
+                >https://github.com/Pallies</a
+              >
+            </div>
+            <hr class="mx-auto my-2" />
+            <div class="d-flex">
+              <svg class="icon icon-home offset-2 col-4">
+                <use xlink:href="./svg/symbol-defs.svg#icon-home"></use>
+              </svg>
+              <p>France - Vendée - 85</p>
+            </div>
+            <hr class="mx-auto my-2" />
+          </section>
+          <!-- EDUCATION -->
+          <section class="education">
+            <h3 class="text-uppercase pl-5">education</h3>
+            <div>
+              <h6 class="extend mt-4 ml-5">Date 1998</h6>
+              <h4 class="extend my-1 ml-5">Brevet d'Etat</h4>
+              <p class="extend ml-5">Fusiliers Marins</p>
+            </div>
+            <div>
+              <h6 class="extend mt-4 ml-5">Date 1994</h6>
+              <h4 class="extend my-1 ml-5 text-wrap">
+                Brevet Etudes Professionnelles
+              </h4>
+              <p class="extend ml-5">Electroniques</p>
+            </div>
+          </section>
+          <!-- LANGUAGES INFORMATIQUES -->
+          <section id="languages" class="skill">
+            <h3 class="text-uppercase pl-4">
+              languages <br /><span style="margin: 0 3rem !important">de</span
+              ><br />programmation
+            </h3>
+            <div class="container-fluid">
+              <div class="row d-flex">
+                <h4 data="4" class="extend text-capitalize mt-2 col-4">java</h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="5" class="extend text-capitalize mt-2 col-4">
+                  javascript
+                </h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="4" class="extend text-capitalize mt-2 col-4">
+                  html/css
+                </h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="3" class="extend text-capitalize mt-2 col-4">
+                  unix/linux
+                </h4>
+              </div>
+            </div>
+          </section>
+          <!-- FRAMEWORK -->
+          <section id="frameworks" class="skill">
+            <h3 class="text-uppercase pl-5">frameworks</h3>
+            <div class="container-fluid">
+              <div class="row d-flex">
+                <h4 data="5" class="extend text-capitalize mt-4 col-4">
+                  angular
+                </h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="4" class="extend text-capitalize mt-2 col-4">
+                  electron
+                </h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="4" class="extend text-capitalize mt-2 col-4">
+                  bootstrap
+                </h4>
+              </div>
+              <div class="row d-flex">
+                <h4 data="3" class="extend text-capitalize mt-2 col-4">
+                  nodejs
+                </h4>
+              </div>
+            </div>
+          </section>
+          <!-- FORMATION -->
+          <section class="skill">
+            <h3 class="text-uppercase pl-5">formation</h3>
+            <h4 id="formation" class="extend text-capitalize mt-4">angular</h4>
+            <h4 class="extend text-capitalize mt-2">angular-avance</h4>
+            <h4 class="extend text-capitalize mt-2">java</h4>
+            <h4 class="extend text-capitalize mt-2">unix</h4>
+          </section>
+        </aside>
+        <!-- MAIN => PARTIE DU MILIEU ou DROITE -->
+        <main class="col-lg-8 col-xl-7">
+          <!-- XP -->
+          <h3 class="text-uppercase pl-5">Expériences professionnelles</h3>
+          <div class="container-fluid">
+            <!-- DELIVERY MANAGER -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2021</h5>
+                <hr />
+                <h5 class="date text-center my-1">2019</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate prems"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Délivery Manager</h4>
+                <h6 class="mb-4 text-uppercase">le groupe la poste - 44</h6>
+                <p>
+                  <span class="ml-4">
+                    Traiter les livraison suivant le processus associé.
+                  </span>
+                  Installer les patches sur les environnements. Maintenir les
+                  outils internes.Participe aux différents processus et
+                  instances de mise en oeuvre.
+                </p>
+              </section>
+            </div>
+            <!-- ORGANISATEUR COURRIER -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2019</h5>
+                <hr />
+                <h5 class="date text-center my-1">2016</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Organisateur Courrier</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 85</h6>
+              </section>
+            </div>
+            <!-- ORGANISATEUR COURRIER -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2016</h5>
+                <hr />
+                <h5 class="date text-center my-1">2015</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Organisateur Courrier</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 39</h6>
+                <p>
+                  <span class="ml-4">
+                    Apporte conseil et expertise au directeur d'établissement de
+                    son périmètre d'activité, dans la conduite de projets
+                    d'optimisation des organisations, dans le respect des
+                    standards et des objectifs
+                  </span>
+                  (productivité, qualité de service et engagement clients)
+                </p>
+              </section>
+            </div>
+            <!-- ENCADRANT COURRIERS -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2015</h5>
+                <hr />
+                <h5 class="date text-center my-1">2013</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Encadrant de proximité</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 39</h6>
+                <p>
+                  <span class="ml-4"> Manager sur deux sites distants. </span>
+
+                  Equipe de 18 facteurs - secteur Orchamps. Equipe support 21
+                  personnes - secteur Dole. Favorise le développement personnel
+                  et l'autonomie de mes équipes pour atteindre les objectifs
+                  fixés.
+                </p>
+              </section>
+            </div>
+            <!-- FACTEUR QUALITE -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2013</h5>
+                <hr />
+                <h5 class="date text-center my-1">2011</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Facteur Qualité</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 25</h6>
+                <div class="ml-4">
+                  Mission :
+                  <p>
+                    - Améliorer en permanence la qualité de service envers le
+                    clients.
+                  </p>
+                  <p>
+                    - Animer les équipes et assurer le remplacement managérial.
+                  </p>
+                  <p>
+                    - Appliquer les règles de sécurité et de respect de
+                    l'environnement.
+                  </p>
+                </div>
+              </section>
+            </div>
+            <!-- FACTEUR D EQUIPE -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2011</h5>
+                <hr />
+                <h5 class="date text-center my-1">2009</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Facteur d'équipe</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 79</h6>
+                <p>
+                  <span class="ml-4">
+                    Participe au remplacement organisé et planifié au sein de
+                    l'équipe.
+                  </span>
+                  Assure des remplacements d'absence inopinée
+                </p>
+              </section>
+            </div>
+            <!-- FACTEUR -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2009</h5>
+                <hr />
+                <h5 class="date text-center my-1">2006</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Facteur</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 79</h6>
+              </section>
+            </div>
+            <!-- FACTEUR -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2006</h5>
+                <hr />
+                <h5 class="date text-center my-1">2000</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Facteur</h4>
+                <h6 class="mb-4 text-uppercase">la poste - bscc - 78</h6>
+
+                <p class="ml-4">
+                  Distribuer la totalité du courrier et des objets de manière
+                  conforme au contrat, collecter les BAL et assurer le
+                  traitement du courrier non distribué.
+                </p>
+                <p>
+                  Assurer le traitement des objets signalés et/ou tracés.
+                  Améliorer en permanence la qualité de service envers les
+                  clients.
+                </p>
+              </section>
+            </div>
+            <!-- AGENT DE SURVEILLANCE -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">2000</h5>
+                <hr />
+                <h5 class="date text-center my-1">1999</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Agent de surveillance</h4>
+                <h6 class="mb-4 text-uppercase">securitas france - 44</h6>
+              </section>
+            </div>
+            <!-- EMPLOYEE DE RESTAURATION -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">1999</h5>
+                <hr />
+                <h5 class="date text-center my-1">1998</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Employée de restauration</h4>
+                <h6 class="mb-4 text-uppercase">flunch - 44</h6>
+              </section>
+            </div>
+            <!-- MARINE NATIONALE -->
+            <div class="row">
+              <section class="col-2 mt-5">
+                <h5 class="date text-center my-1">1998</h5>
+                <hr />
+                <h5 class="date text-center my-1">1994</h5>
+              </section>
+              <section class="col-1 mt-5 diviser separate"></section>
+              <section class="col-9 mt-5">
+                <h4 class="my-2">Fusiliers Marins</h4>
+                <h6 class="mb-4 text-uppercase">Marine Nationale - 56</h6>
+              </section>
+            </div>
+          </div>
+        </main>
+        <!-- PARTIE DE PIED DE PAGE OU A GAUCHE -->
+        <footer class="col-lg-12 col-xl-3">
+          <!-- HOBBIES -->
+          <section class="education">
+            <h3 class="text-uppercase pt-5 pl-5 mb-5">loisirs</h3>
+            <div class="my-5">
+              <h4 class="extend my-1 ml-5">Trail</h4>
+              <p class="extend ml-5">
+                <span class="ml-4">Le</span> trail running est une activité
+                sportive qui associe la course à pied et les dénivelés sur
+                n'importe quelle surface non goudronnée.
+              </p>
+            </div>
+            <div class="my-5">
+              <h4 class="extend my-1 ml-5">Echecs</h4>
+              <p class="extend ml-5">
+                <span class="ml-4">~ 1600</span>-1800 elo
+              </p>
+            </div>
+            <div class="my-5">
+              <h4 class="extend my-1 ml-5">Dessin</h4>
+              <p class="extend ml-5">
+                <span class="ml-4">Réalisation</span> de dessin Pastel (crayons
+                et baton) sur papier canson.
+              </p>
+            </div>
+            <div class="my-5">
+              <div
+                id="paintCarousel"
+                class="carousel slide carousel-dark"
+                data-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    class="px-3 mx-1"
+                    type="button"
+                    data-target="#paintCarousel"
+                    data-slide-to="0"
+                    aria-current="true"
+                    aria-label="1"
+                  ></button>
+                  <button
+                    class="px-3 mx-1"
+                    type="button"
+                    data-target="#paintCarousel"
+                    data-slide-to="1"
+                    aria-label="2"
+                  ></button>
+                  <button
+                    class="px-3 mx-1"
+                    type="button"
+                    data-target="#paintCarousel"
+                    data-slide-to="2"
+                    aria-label="3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/magnolia.jpg"
+                      class="d-block w-100"
+                      alt="Branche de magnolia"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/fruits.jpg"
+                      class="d-block w-100"
+                      alt="Coupe de fruits"
+                    />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/coquillage.jpg"
+                      class="d-block w-100"
+                      alt="Coquillage"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-target="#paintCarousel"
+                  data-slide="prev"
+                  hidden
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Précédent</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-target="#paintCarousel"
+                  data-slide="next"
+                  hidden
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Suivant</span>
+                </button>
+              </div>
+            </div>
+            <div class="my-5">
+              <h4 class="extend my-1 ml-5">Programmation</h4>
+              <p class="extend ml-5 my-3">
+                <span class="ml-4">Réalisation</span> d'une application à
+                destination des facteurs.Ce cahier a été réalisé avec le
+                language JAVA et la bibliothèque swing
+              </p>
+              <p class="extend ml-5 my-3">
+                <span class="ml-4">Réalisation</span> d'une application
+                respectant le cahier des charges fixées par la hiérarchie,visant
+                à remplacer un logiciel non pérenne.Cette nouvelle application a
+                été réalisée dans des languages typeScript / Angular pour la
+                partie Front et typeScript / nestJS pour la partie back avec
+                échanges d'une base de données Oracle.
+              </p>
+            </div>
+          </section>
+        </footer>
+      </div>
+    </div>
+    <script src="./../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script/popper.min.js"></script>
+    <script src="./../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="./script/toggleChecked.js"></script>
+    <script src="./script/insert-svg.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon - font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+    href="./../bootstrap-4.0.0/dist/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/creer-style.css" />
+    <title>Collaborateur Errors</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="./index.html" class="navbar-brand"> SGP </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTarget"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTarget">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./creer.html">Collaborateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stats.html">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./activites.html"> Activités </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- FORM -->
+      <div class="container-fluid">
+        <div class="row" style="margin-top: 2rem">
+          <div class="jumbotron col m-4">
+            <h1 class="display-4">Nouveau Collaborateur</h1>
+          </div>
+        </div>
+      </div>
+      <form action="#" method="post">
+        <div class="container">
+          <!-- ROW NAME -->
+          <div class="row">
+            <div class="form-group d-flex flex-wrap col">
+              <label for="name" class="col-6"><span>Nom :</span></label>
+              <input id="name" type="text" class="form-control col-6" />
+              <span
+                id="errors_name"
+                class="offset-6 col-6 d-flex align-items-end pt-2 errors"
+                >Le nom est obligatoire</span
+              >
+            </div>
+          </div>
+          <!-- ROW LASTNAME -->
+          <div class="row">
+            <div class="form-group d-flex flex-wrap col">
+              <label for="firstname" class="col-6"
+                ><span class="h5">Prénom :</span></label
+              >
+              <input id="firstname" type="text" class="form-control col-6" />
+              <span
+                id="errors_firstname"
+                class="offset-6 col-6 d-flex align-items-end pt-2 errors"
+                >Le prénom est obligatoire</span
+              >
+            </div>
+          </div>
+          <!-- ROW DATE DE NAISSANCE -->
+          <div class="row">
+            <div class="form-group d-flex flex-wrap col">
+              <label for="birthday" class="col-6"
+                ><span class="h5">Date de naissance :</span></label
+              >
+              <input type="text" id="birthday" class="form-control col-6" />
+              <span
+                id="errors_birthday"
+                class="offset-6 col-6 d-flex align-items-end pt-2 errors"
+                >La date de naissance est obligatoire</span
+              >
+            </div>
+          </div>
+          <!-- ROW ADDRESS -->
+          <div class="row">
+            <div class="form-group col d-flex flex-wrap">
+              <label for="address" class="col-6"
+                ><span class="h5">Adresse</span></label
+              >
+              <textarea
+                name="adresse"
+                id="address"
+                class="col-6 form-control"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <span
+                id="errors_address"
+                class="offset-6 col-6 d-flex align-items-end pt-2 errors"
+                >L'adresse est obligatoire</span
+              >
+            </div>
+          </div>
+          <!-- ROW SOCIAL SECURITY -->
+          <div class="row">
+            <div class="form-group col d-flex flex-wrap">
+              <label for="social_secu" class="col-6"
+                ><span class="h5">Numéro de Sécurité Sociale</span></label
+              >
+              <input
+                type="tel"
+                name="social_security"
+                id="social_secu"
+                class="col-6 form-control"
+              />
+              <span
+                id="errors_secu"
+                class="offset-6 col-6 d-flex align-items-end pt-2 errors"
+                >Le numéro de sécurité social est obligatoire</span
+              >
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-lg btn-success"
+                data-toggle="modal"
+                data-target="#confirm_modal"
+              >
+                Créer
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="confirm_modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="alert-info modal-title w-100">
+              <h5 class="p-2">Création d'un collaborateur</h5>
+            </div>
+          </div>
+          <div class="modal-body h-300">
+            <!-- MODAL CONTENT -->
+            <div class="container">
+              <div class="row my-4 w-700">
+                <h5 class="col">
+                  Vous êtes sur le point de créer un nouveau collaborateur :
+                </h5>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Nom :</div>
+                <div class="col" id="name_modal"></div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Prénom :</div>
+                <div class="col" id="lastname_modal"></div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Date de naissance :</div>
+                <div class="col" id="birthday_modal"></div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Adresse :</div>
+                <div class="col" id="adress_modal"></div>
+              </div>
+              <div class="row">
+                <div class="col">Numéro de sécurité sociale :</div>
+                <div class="col" id="social_modal"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Annuler
+            </button>
+            <button class="btn btn-success" type="button">Confirmer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./script/jquery/jquery.min.js"></script>
+    <script src="./script/popper/popper.min.js"></script>
+   <script src="./../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
